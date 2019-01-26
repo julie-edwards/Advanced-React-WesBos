@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../theme.js'
 
 const CartStyles = styled.div`
   padding: 20px;
@@ -19,12 +20,12 @@ const CartStyles = styled.div`
   grid-template-rows: auto 1fr auto;
   ${props => props.open && `transform: translateX(0);`};
   header {
-    border-bottom: 5px solid ${props => props.theme.black};
+    border-bottom: 5px solid ${theme.black};
     margin-bottom: 2rem;
     padding-bottom: 2rem;
   }
   footer {
-    border-top: 10px double ${props => props.theme.black};
+    border-top: 10px double ${theme.black};
     margin-top: 2rem;
     padding-top: 2rem;
     display: grid;

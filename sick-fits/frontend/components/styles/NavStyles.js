@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../theme.js'
 
 const NavStyles = styled.ul`
   margin: 0;
@@ -25,7 +26,7 @@ const NavStyles = styled.ul`
     &:before {
       content: '';
       width: 2px;
-      background: ${props => props.theme.lightgrey};
+      background: ${theme.lightGrey};
       height: 100%;
       left: 0;
       position: absolute;
@@ -57,7 +58,7 @@ const NavStyles = styled.ul`
     }
   }
   @media (max-width: 1300px) {
-    border-top: 1px solid ${props => props.theme.lightgrey};
+    border-top: 1px solid ${theme.lightGrey};
     width: 100%;
     justify-content: center;
     font-size: 1.5rem;
